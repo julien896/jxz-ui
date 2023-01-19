@@ -1,11 +1,11 @@
 import './myLabel.css'
 
-interface Props {
+export interface Props {
     label: string;
     size: 'normal' | 'h1' | 'h2' | 'h3';
 }
 
-const Label = ( {
+export const Label = ( {
     label = 'Label',
     size = 'normal' 
 }: Props ) => {
@@ -14,4 +14,3 @@ const Label = ( {
      );
 }
  
-export default Label;
